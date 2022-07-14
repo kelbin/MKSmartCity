@@ -36,6 +36,21 @@
 		3287A2262880B7B60096DDD9 /* DreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2242880B7B60096DDD9 /* DreamsViewController.swift */; };
 		3287A2282880B9110096DDD9 /* DreamsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2272880B9110096DDD9 /* DreamsCell.xib */; };
 		3287A22A2880B9200096DDD9 /* DreamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2292880B9200096DDD9 /* DreamsCell.swift */; };
+		3287A2322880C1680096DDD9 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A22C2880C1680096DDD9 /* CalendarView.xib */; };
+		3287A2332880C1680096DDD9 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A22D2880C1680096DDD9 /* CalendarHelper.swift */; };
+		3287A2342880C1680096DDD9 /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A22F2880C1680096DDD9 /* CalendarViewCell.swift */; };
+		3287A2352880C1680096DDD9 /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2302880C1680096DDD9 /* CalendarViewCell.xib */; };
+		3287A2362880C1680096DDD9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2312880C1680096DDD9 /* CalendarView.swift */; };
+		3287A23C2880C2550096DDD9 /* DreamsExtendedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2382880C2550096DDD9 /* DreamsExtendedCell.xib */; };
+		3287A23D2880C2560096DDD9 /* DreamsExtendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2392880C2550096DDD9 /* DreamsExtendedViewController.swift */; };
+		3287A23E2880C2560096DDD9 /* DreamsExtendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A23A2880C2550096DDD9 /* DreamsExtendedCell.swift */; };
+		3287A23F2880C2560096DDD9 /* DreamsExtended.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A23B2880C2550096DDD9 /* DreamsExtended.storyboard */; };
+		3287A2472880C2F50096DDD9 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2412880C2F50096DDD9 /* TaskDetailViewController.swift */; };
+		3287A2482880C2F50096DDD9 /* TaskDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2422880C2F50096DDD9 /* TaskDetail.storyboard */; };
+		3287A2492880C2F50096DDD9 /* TasksDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2432880C2F50096DDD9 /* TasksDetailCell.swift */; };
+		3287A24A2880C2F50096DDD9 /* TasksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2442880C2F50096DDD9 /* TasksCell.xib */; };
+		3287A24B2880C2F50096DDD9 /* TasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2452880C2F50096DDD9 /* TasksCell.swift */; };
+		3287A24C2880C2F50096DDD9 /* TasksDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2462880C2F50096DDD9 /* TasksDetailCell.xib */; };
 		C10EE39477D4D6086B32B193 /* Pods_MCHSmartCity_MCHSmartCityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */; };
 		D5B1D7C1C4B78DC7B1F00DF8 /* Pods_MCHSmartCityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */; };
 		E7EB4D17EBFB43B10A4E098F /* Pods_MCHSmartCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */; };
@@ -96,6 +111,21 @@
 		3287A2242880B7B60096DDD9 /* DreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamsViewController.swift; sourceTree = "<group>"; };
 		3287A2272880B9110096DDD9 /* DreamsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DreamsCell.xib; sourceTree = "<group>"; };
 		3287A2292880B9200096DDD9 /* DreamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsCell.swift; sourceTree = "<group>"; };
+		3287A22C2880C1680096DDD9 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		3287A22D2880C1680096DDD9 /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		3287A22F2880C1680096DDD9 /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
+		3287A2302880C1680096DDD9 /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
+		3287A2312880C1680096DDD9 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		3287A2382880C2550096DDD9 /* DreamsExtendedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DreamsExtendedCell.xib; sourceTree = "<group>"; };
+		3287A2392880C2550096DDD9 /* DreamsExtendedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamsExtendedViewController.swift; sourceTree = "<group>"; };
+		3287A23A2880C2550096DDD9 /* DreamsExtendedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamsExtendedCell.swift; sourceTree = "<group>"; };
+		3287A23B2880C2550096DDD9 /* DreamsExtended.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DreamsExtended.storyboard; sourceTree = "<group>"; };
+		3287A2412880C2F50096DDD9 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		3287A2422880C2F50096DDD9 /* TaskDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskDetail.storyboard; sourceTree = "<group>"; };
+		3287A2432880C2F50096DDD9 /* TasksDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksDetailCell.swift; sourceTree = "<group>"; };
+		3287A2442880C2F50096DDD9 /* TasksCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TasksCell.xib; sourceTree = "<group>"; };
+		3287A2452880C2F50096DDD9 /* TasksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksCell.swift; sourceTree = "<group>"; };
+		3287A2462880C2F50096DDD9 /* TasksDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TasksDetailCell.xib; sourceTree = "<group>"; };
 		3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity_MCHSmartCityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +285,9 @@
 		2CCA0BD9287D897900DE98BE /* Dreams */ = {
 			isa = PBXGroup;
 			children = (
+				3287A2402880C2F50096DDD9 /* Tasks */,
+				3287A2372880C2550096DDD9 /* DreamsExtended */,
+				3287A22B2880C1680096DDD9 /* CalendarView */,
 				3287A2232880B7B60096DDD9 /* Dreams.storyboard */,
 				3287A2242880B7B60096DDD9 /* DreamsViewController.swift */,
 				3287A2272880B9110096DDD9 /* DreamsCell.xib */,
@@ -284,6 +317,50 @@
 				6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3287A22B2880C1680096DDD9 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				3287A22C2880C1680096DDD9 /* CalendarView.xib */,
+				3287A2312880C1680096DDD9 /* CalendarView.swift */,
+				3287A22D2880C1680096DDD9 /* CalendarHelper.swift */,
+				3287A22E2880C1680096DDD9 /* Cell */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		3287A22E2880C1680096DDD9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3287A22F2880C1680096DDD9 /* CalendarViewCell.swift */,
+				3287A2302880C1680096DDD9 /* CalendarViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3287A2372880C2550096DDD9 /* DreamsExtended */ = {
+			isa = PBXGroup;
+			children = (
+				3287A2382880C2550096DDD9 /* DreamsExtendedCell.xib */,
+				3287A2392880C2550096DDD9 /* DreamsExtendedViewController.swift */,
+				3287A23A2880C2550096DDD9 /* DreamsExtendedCell.swift */,
+				3287A23B2880C2550096DDD9 /* DreamsExtended.storyboard */,
+			);
+			path = DreamsExtended;
+			sourceTree = "<group>";
+		};
+		3287A2402880C2F50096DDD9 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				3287A2412880C2F50096DDD9 /* TaskDetailViewController.swift */,
+				3287A2422880C2F50096DDD9 /* TaskDetail.storyboard */,
+				3287A2432880C2F50096DDD9 /* TasksDetailCell.swift */,
+				3287A2442880C2F50096DDD9 /* TasksCell.xib */,
+				3287A2452880C2F50096DDD9 /* TasksCell.swift */,
+				3287A2462880C2F50096DDD9 /* TasksDetailCell.xib */,
+			);
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 		8651191F0C6BE2254C64ACEE /* Pods */ = {
@@ -409,11 +486,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C354AE3287F125800A5E598 /* InspirerCollectionViewCell.xib in Resources */,
+				3287A2322880C1680096DDD9 /* CalendarView.xib in Resources */,
+				3287A2352880C1680096DDD9 /* CalendarViewCell.xib in Resources */,
 				2C354ADB287EF6D500A5E598 /* StreamsCollectionViewCell.xib in Resources */,
+				3287A23F2880C2560096DDD9 /* DreamsExtended.storyboard in Resources */,
 				2C354AE8288046F100A5E598 /* MoodSphereViewController.xib in Resources */,
+				3287A2482880C2F50096DDD9 /* TaskDetail.storyboard in Resources */,
 				3287A21B2880B2D90096DDD9 /* Social.storyboard in Resources */,
+				3287A24A2880C2F50096DDD9 /* TasksCell.xib in Resources */,
 				3287A21C2880B2D90096DDD9 /* SocialCell.xib in Resources */,
 				2C354ADF287EFEE300A5E598 /* SICollectionViewCell.xib in Resources */,
+				3287A24C2880C2F50096DDD9 /* TasksDetailCell.xib in Resources */,
+				3287A23C2880C2550096DDD9 /* DreamsExtendedCell.xib in Resources */,
 				2CCA0BB1287D84F400DE98BE /* LaunchScreen.storyboard in Resources */,
 				3287A21D2880B2D90096DDD9 /* SocialHistoryCell.xib in Resources */,
 				2CCA0BAE287D84F400DE98BE /* Assets.xcassets in Resources */,
@@ -547,17 +631,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3287A23D2880C2560096DDD9 /* DreamsExtendedViewController.swift in Sources */,
+				3287A2492880C2F50096DDD9 /* TasksDetailCell.swift in Sources */,
 				2CCA0BDD287ED91600DE98BE /* StreamsViewController.swift in Sources */,
 				2CCA0BA5287D84EF00DE98BE /* AppDelegate.swift in Sources */,
 				3287A2262880B7B60096DDD9 /* DreamsViewController.swift in Sources */,
+				3287A2362880C1680096DDD9 /* CalendarView.swift in Sources */,
+				3287A23E2880C2560096DDD9 /* DreamsExtendedCell.swift in Sources */,
 				2C354AE2287F125800A5E598 /* InspirerCollectionViewCell.swift in Sources */,
 				2C354ADA287EF6D500A5E598 /* StreamsCollectionViewCell.swift in Sources */,
 				2C354AD6287EF4D400A5E598 /* Core.swift in Sources */,
+				3287A2342880C1680096DDD9 /* CalendarViewCell.swift in Sources */,
 				2C354ADE287EFEE300A5E598 /* SICollectionViewCell.swift in Sources */,
 				3287A21E2880B2D90096DDD9 /* SocialViewController.swift in Sources */,
 				2C354AE7288046F100A5E598 /* MoodSphereViewController.swift in Sources */,
 				2CCA0BE0287EDDA400DE98BE /* AnimatedTabbar.swift in Sources */,
+				3287A2472880C2F50096DDD9 /* TaskDetailViewController.swift in Sources */,
+				3287A2332880C1680096DDD9 /* CalendarHelper.swift in Sources */,
 				3287A21F2880B2D90096DDD9 /* SocialHistoryCell.swift in Sources */,
+				3287A24B2880C2F50096DDD9 /* TasksCell.swift in Sources */,
 				3287A22A2880B9200096DDD9 /* DreamsCell.swift in Sources */,
 				3287A2202880B2D90096DDD9 /* SocialCell.swift in Sources */,
 				3287A2222880B41A0096DDD9 /* Helper.swift in Sources */,

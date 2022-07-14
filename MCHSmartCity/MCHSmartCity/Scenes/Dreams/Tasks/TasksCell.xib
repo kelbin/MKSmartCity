@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pUh-7D-VhM" customClass="TasksCell" customModule="Hack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wXE-Mc-ghb">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-vb-UOC">
+                        <rect key="frame" x="16" y="25" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="2gk-ue-4T7"/>
+                            <constraint firstAttribute="height" constant="24" id="BNL-9s-nRN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqd-uI-b9m">
+                        <rect key="frame" x="187.5" y="28.5" width="36.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiA-6c-plo" userLabel="Title">
+                        <rect key="frame" x="56" y="16" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-ys-gye" userLabel="Context">
+                        <rect key="frame" x="56" y="36" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sqd-uI-b9m" secondAttribute="trailing" constant="16" id="FPX-Y2-7dH"/>
+                    <constraint firstItem="EH0-vb-UOC" firstAttribute="leading" secondItem="wXE-Mc-ghb" secondAttribute="leading" constant="16" id="HE7-Pn-FrY"/>
+                    <constraint firstItem="EH0-vb-UOC" firstAttribute="centerY" secondItem="wXE-Mc-ghb" secondAttribute="centerY" id="JZj-0d-cPi"/>
+                    <constraint firstItem="eTg-ys-gye" firstAttribute="leading" secondItem="EH0-vb-UOC" secondAttribute="trailing" constant="16" id="OF9-G7-qy3"/>
+                    <constraint firstItem="tiA-6c-plo" firstAttribute="top" secondItem="wXE-Mc-ghb" secondAttribute="top" constant="16" id="gvU-in-qoi"/>
+                    <constraint firstItem="tiA-6c-plo" firstAttribute="leading" secondItem="EH0-vb-UOC" secondAttribute="trailing" constant="16" id="hE9-p5-J5v"/>
+                    <constraint firstItem="sqd-uI-b9m" firstAttribute="centerY" secondItem="wXE-Mc-ghb" secondAttribute="centerY" id="jbU-BY-xgj"/>
+                    <constraint firstItem="eTg-ys-gye" firstAttribute="top" secondItem="tiA-6c-plo" secondAttribute="bottom" id="xKJ-3O-rx0"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="270" height="314"/>
+            <connections>
+                <outlet property="date" destination="sqd-uI-b9m" id="hrH-5U-Us8"/>
+                <outlet property="subTitle" destination="eTg-ys-gye" id="tQj-0h-Lw3"/>
+                <outlet property="title" destination="tiA-6c-plo" id="gMK-Dc-Cnc"/>
+            </connections>
+            <point key="canvasLocation" x="288.40579710144931" y="-168.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dot" width="24" height="24"/>
+    </resources>
+</document>

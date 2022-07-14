@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="CalendarViewCell" customModule="Hack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="34" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="34" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RX-Z7-1rX">
+                        <rect key="frame" x="0.0" y="0.0" width="34" height="56"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5z-zp-UZr">
+                                <rect key="frame" x="0.0" y="0.0" width="34" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ПН" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otj-DQ-3Rh" userLabel="dayNameLabel">
+                                        <rect key="frame" x="9" y="8" width="16" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="ZZS-YY-6hk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="11"/>
+                                        <color key="textColor" red="0.53333333333333333" green="0.53725490196078429" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПН" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2Q-uT-J2g" userLabel="dayLabel">
+                                        <rect key="frame" x="5.5" y="25" width="23" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Cus-0y-llq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" red="0.53333333333333333" green="0.53725490196078429" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="t2Q-uT-J2g" firstAttribute="centerX" secondItem="S5z-zp-UZr" secondAttribute="centerX" id="XzT-94-wid"/>
+                                    <constraint firstItem="t2Q-uT-J2g" firstAttribute="top" secondItem="otj-DQ-3Rh" secondAttribute="bottom" constant="2" id="m7c-am-yPW"/>
+                                    <constraint firstItem="otj-DQ-3Rh" firstAttribute="centerX" secondItem="S5z-zp-UZr" secondAttribute="centerX" id="nkM-VN-Xyf"/>
+                                    <constraint firstItem="otj-DQ-3Rh" firstAttribute="top" secondItem="S5z-zp-UZr" secondAttribute="top" constant="8" id="tCv-Qh-Ioy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S5z-zp-UZr" firstAttribute="top" secondItem="8RX-Z7-1rX" secondAttribute="top" id="3Vh-Em-omk"/>
+                            <constraint firstItem="S5z-zp-UZr" firstAttribute="leading" secondItem="8RX-Z7-1rX" secondAttribute="leading" id="LMu-cW-vat"/>
+                            <constraint firstAttribute="bottom" secondItem="S5z-zp-UZr" secondAttribute="bottom" id="bV8-nJ-7i7"/>
+                            <constraint firstAttribute="trailing" secondItem="S5z-zp-UZr" secondAttribute="trailing" id="hwD-MJ-xa5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8RX-Z7-1rX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Pxq-CI-wne"/>
+                <constraint firstAttribute="bottom" secondItem="8RX-Z7-1rX" secondAttribute="bottom" id="btp-m8-r37"/>
+                <constraint firstItem="8RX-Z7-1rX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ee4-SF-0i5"/>
+                <constraint firstAttribute="trailing" secondItem="8RX-Z7-1rX" secondAttribute="trailing" id="lyM-ch-Vq4"/>
+            </constraints>
+            <size key="customSize" width="50" height="69"/>
+            <connections>
+                <outlet property="containerView" destination="S5z-zp-UZr" id="K4x-dL-aLA"/>
+                <outlet property="numberDayLabel" destination="t2Q-uT-J2g" id="lNR-81-Weq"/>
+                <outlet property="weekDayNameLabel" destination="otj-DQ-3Rh" id="dzc-vI-0kr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="101.45089285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -25,7 +25,12 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if indexPath.row == 0 {
+            let storyboard = UIStoryboard(name: "DreamsExtended", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "DreamsExtendedSID")
+            navigationController?.pushViewController(vc, animated: true)
+//            present(vc, animated: true, completion: nil)
+        }
     }
     
     @IBOutlet var collectionView: UICollectionView!

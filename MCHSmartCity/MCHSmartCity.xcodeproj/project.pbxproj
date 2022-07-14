@@ -25,6 +25,12 @@
 		2CCA0BDD287ED91600DE98BE /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDB287ED91600DE98BE /* StreamsViewController.swift */; };
 		2CCA0BDE287ED91600DE98BE /* StreamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDC287ED91600DE98BE /* StreamsViewController.xib */; };
 		2CCA0BE0287EDDA400DE98BE /* AnimatedTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDF287EDDA400DE98BE /* AnimatedTabbar.swift */; };
+		3287A21B2880B2D90096DDD9 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2152880B2D80096DDD9 /* Social.storyboard */; };
+		3287A21C2880B2D90096DDD9 /* SocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2162880B2D80096DDD9 /* SocialCell.xib */; };
+		3287A21D2880B2D90096DDD9 /* SocialHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2172880B2D80096DDD9 /* SocialHistoryCell.xib */; };
+		3287A21E2880B2D90096DDD9 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2182880B2D80096DDD9 /* SocialViewController.swift */; };
+		3287A21F2880B2D90096DDD9 /* SocialHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2192880B2D80096DDD9 /* SocialHistoryCell.swift */; };
+		3287A2202880B2D90096DDD9 /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A21A2880B2D80096DDD9 /* SocialCell.swift */; };
 		C10EE39477D4D6086B32B193 /* Pods_MCHSmartCity_MCHSmartCityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */; };
 		D5B1D7C1C4B78DC7B1F00DF8 /* Pods_MCHSmartCityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */; };
 		E7EB4D17EBFB43B10A4E098F /* Pods_MCHSmartCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */; };
@@ -74,6 +80,12 @@
 		2CCA0BDB287ED91600DE98BE /* StreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
 		2CCA0BDC287ED91600DE98BE /* StreamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreamsViewController.xib; sourceTree = "<group>"; };
 		2CCA0BDF287EDDA400DE98BE /* AnimatedTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabbar.swift; sourceTree = "<group>"; };
+		3287A2152880B2D80096DDD9 /* Social.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
+		3287A2162880B2D80096DDD9 /* SocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialCell.xib; sourceTree = "<group>"; };
+		3287A2172880B2D80096DDD9 /* SocialHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialHistoryCell.xib; sourceTree = "<group>"; };
+		3287A2182880B2D80096DDD9 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		3287A2192880B2D80096DDD9 /* SocialHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialHistoryCell.swift; sourceTree = "<group>"; };
+		3287A21A2880B2D80096DDD9 /* SocialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
 		3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity_MCHSmartCityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +206,7 @@
 		2CCA0BD5287D879A00DE98BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3287A2142880B2D80096DDD9 /* SocialCollection */,
 				2C354AE4288046BC00A5E598 /* MoodSphere */,
 				2CCA0BDA287D899D00DE98BE /* Posts */,
 				2CCA0BD9287D897900DE98BE /* Dreams */,
@@ -252,6 +265,20 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		3287A2142880B2D80096DDD9 /* SocialCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3287A2152880B2D80096DDD9 /* Social.storyboard */,
+				3287A2162880B2D80096DDD9 /* SocialCell.xib */,
+				3287A2172880B2D80096DDD9 /* SocialHistoryCell.xib */,
+				3287A2182880B2D80096DDD9 /* SocialViewController.swift */,
+				3287A2192880B2D80096DDD9 /* SocialHistoryCell.swift */,
+				3287A21A2880B2D80096DDD9 /* SocialCell.swift */,
+			);
+			name = SocialCollection;
+			path = MCHSmartCity/SocialCollection;
+			sourceTree = SOURCE_ROOT;
 		};
 		8651191F0C6BE2254C64ACEE /* Pods */ = {
 			isa = PBXGroup;
@@ -378,8 +405,11 @@
 				2C354AE3287F125800A5E598 /* InspirerCollectionViewCell.xib in Resources */,
 				2C354ADB287EF6D500A5E598 /* StreamsCollectionViewCell.xib in Resources */,
 				2C354AE8288046F100A5E598 /* MoodSphereViewController.xib in Resources */,
+				3287A21B2880B2D90096DDD9 /* Social.storyboard in Resources */,
+				3287A21C2880B2D90096DDD9 /* SocialCell.xib in Resources */,
 				2C354ADF287EFEE300A5E598 /* SICollectionViewCell.xib in Resources */,
 				2CCA0BB1287D84F400DE98BE /* LaunchScreen.storyboard in Resources */,
+				3287A21D2880B2D90096DDD9 /* SocialHistoryCell.xib in Resources */,
 				2CCA0BAE287D84F400DE98BE /* Assets.xcassets in Resources */,
 				2CCA0BDE287ED91600DE98BE /* StreamsViewController.xib in Resources */,
 			);
@@ -515,8 +545,11 @@
 				2C354ADA287EF6D500A5E598 /* StreamsCollectionViewCell.swift in Sources */,
 				2C354AD6287EF4D400A5E598 /* Core.swift in Sources */,
 				2C354ADE287EFEE300A5E598 /* SICollectionViewCell.swift in Sources */,
+				3287A21E2880B2D90096DDD9 /* SocialViewController.swift in Sources */,
 				2C354AE7288046F100A5E598 /* MoodSphereViewController.swift in Sources */,
 				2CCA0BE0287EDDA400DE98BE /* AnimatedTabbar.swift in Sources */,
+				3287A21F2880B2D90096DDD9 /* SocialHistoryCell.swift in Sources */,
+				3287A2202880B2D90096DDD9 /* SocialCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

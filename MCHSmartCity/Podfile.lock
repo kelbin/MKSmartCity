@@ -1,0 +1,20 @@
+PODS:
+  - FancyGradient (1.0.2)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - FancyGradient
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - FancyGradient
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  FancyGradient: 9b3f13b2ccf66abc40417cd4c4c1d625ddb07478
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 30ecd510e44662c12fe32cba6209d828a4186478
+
+COCOAPODS: 1.11.3

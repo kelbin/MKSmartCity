@@ -30,8 +30,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         nav2.setNavigationBarHidden(false, animated: true)
         nav2.title = "second"
         
-        let third = StreamsViewController(nibName: "StreamsViewController", bundle: nil)
-        third.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "folders"), selectedImage: nil)
+        let storyboard = UIStoryboard(name: "Social", bundle: nil)
+        let third = storyboard.instantiateViewController(withIdentifier: "SocialSID")
+        third.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "tab-Comment"), selectedImage: nil)
         third.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
         let nav3 = UINavigationController()
         nav3.viewControllers = [third]

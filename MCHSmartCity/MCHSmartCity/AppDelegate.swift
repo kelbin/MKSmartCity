@@ -22,7 +22,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         nav1.title = "first"
         nav1.navigationBar.barTintColor = .black
         
-        let second = MoodSphereViewController(nibName: "MoodSphereViewController", bundle: nil)
+        let storyboard1 = UIStoryboard(name: "Dreams", bundle: nil)
+        let second = storyboard1.instantiateViewController(withIdentifier: "DreamsViewControllerSID")
         second.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Tab"), selectedImage: nil)
         second.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
         let nav2 = UINavigationController()

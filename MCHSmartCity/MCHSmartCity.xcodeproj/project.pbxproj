@@ -32,6 +32,10 @@
 		3287A21F2880B2D90096DDD9 /* SocialHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2192880B2D80096DDD9 /* SocialHistoryCell.swift */; };
 		3287A2202880B2D90096DDD9 /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A21A2880B2D80096DDD9 /* SocialCell.swift */; };
 		3287A2222880B41A0096DDD9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2212880B41A0096DDD9 /* Helper.swift */; };
+		3287A2252880B7B60096DDD9 /* Dreams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2232880B7B60096DDD9 /* Dreams.storyboard */; };
+		3287A2262880B7B60096DDD9 /* DreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2242880B7B60096DDD9 /* DreamsViewController.swift */; };
+		3287A2282880B9110096DDD9 /* DreamsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2272880B9110096DDD9 /* DreamsCell.xib */; };
+		3287A22A2880B9200096DDD9 /* DreamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2292880B9200096DDD9 /* DreamsCell.swift */; };
 		C10EE39477D4D6086B32B193 /* Pods_MCHSmartCity_MCHSmartCityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */; };
 		D5B1D7C1C4B78DC7B1F00DF8 /* Pods_MCHSmartCityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */; };
 		E7EB4D17EBFB43B10A4E098F /* Pods_MCHSmartCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */; };
@@ -88,6 +92,10 @@
 		3287A2192880B2D80096DDD9 /* SocialHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialHistoryCell.swift; sourceTree = "<group>"; };
 		3287A21A2880B2D80096DDD9 /* SocialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
 		3287A2212880B41A0096DDD9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3287A2232880B7B60096DDD9 /* Dreams.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dreams.storyboard; sourceTree = "<group>"; };
+		3287A2242880B7B60096DDD9 /* DreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamsViewController.swift; sourceTree = "<group>"; };
+		3287A2272880B9110096DDD9 /* DreamsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DreamsCell.xib; sourceTree = "<group>"; };
+		3287A2292880B9200096DDD9 /* DreamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsCell.swift; sourceTree = "<group>"; };
 		3AC2464D8C73D05AF00AFC9B /* Pods_MCHSmartCity_MCHSmartCityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity_MCHSmartCityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9F58EAB2CBECCA731F50F6 /* Pods_MCHSmartCityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E319C2BA3F0620567EBD6D8 /* Pods_MCHSmartCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHSmartCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +255,10 @@
 		2CCA0BD9287D897900DE98BE /* Dreams */ = {
 			isa = PBXGroup;
 			children = (
+				3287A2232880B7B60096DDD9 /* Dreams.storyboard */,
+				3287A2242880B7B60096DDD9 /* DreamsViewController.swift */,
+				3287A2272880B9110096DDD9 /* DreamsCell.xib */,
+				3287A2292880B9200096DDD9 /* DreamsCell.swift */,
 			);
 			path = Dreams;
 			sourceTree = "<group>";
@@ -406,6 +418,8 @@
 				3287A21D2880B2D90096DDD9 /* SocialHistoryCell.xib in Resources */,
 				2CCA0BAE287D84F400DE98BE /* Assets.xcassets in Resources */,
 				2CCA0BDE287ED91600DE98BE /* StreamsViewController.xib in Resources */,
+				3287A2252880B7B60096DDD9 /* Dreams.storyboard in Resources */,
+				3287A2282880B9110096DDD9 /* DreamsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +549,7 @@
 			files = (
 				2CCA0BDD287ED91600DE98BE /* StreamsViewController.swift in Sources */,
 				2CCA0BA5287D84EF00DE98BE /* AppDelegate.swift in Sources */,
+				3287A2262880B7B60096DDD9 /* DreamsViewController.swift in Sources */,
 				2C354AE2287F125800A5E598 /* InspirerCollectionViewCell.swift in Sources */,
 				2C354ADA287EF6D500A5E598 /* StreamsCollectionViewCell.swift in Sources */,
 				2C354AD6287EF4D400A5E598 /* Core.swift in Sources */,
@@ -543,6 +558,7 @@
 				2C354AE7288046F100A5E598 /* MoodSphereViewController.swift in Sources */,
 				2CCA0BE0287EDDA400DE98BE /* AnimatedTabbar.swift in Sources */,
 				3287A21F2880B2D90096DDD9 /* SocialHistoryCell.swift in Sources */,
+				3287A22A2880B9200096DDD9 /* DreamsCell.swift in Sources */,
 				3287A2202880B2D90096DDD9 /* SocialCell.swift in Sources */,
 				3287A2222880B41A0096DDD9 /* Helper.swift in Sources */,
 			);

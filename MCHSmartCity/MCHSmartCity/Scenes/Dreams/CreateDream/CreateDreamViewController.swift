@@ -32,29 +32,13 @@ class CreateDreamViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        table
-        
         table?.dataSource = self
         table?.delegate = self
-//        table.dragDelegate = self
-//        table.dragInteractionEnabled = true
         
         
         table?.backgroundColor = .clear
         table?.showsVerticalScrollIndicator = false
         table?.register(TasksDetailCell.nib(), forCellReuseIdentifier: TasksDetailCell.identifier)
-        
-        data.append(TasksDetailCellObject(title: "Интерфейс программы", isEditing: true))
-        data.append(TasksDetailCellObject(title: "Настройки Blender", isEditing: true))
-        data.append(TasksDetailCellObject(title: "Базовый мэш", isEditing: true))
-        data.append(TasksDetailCellObject(title: "Интерфейс программы 2", isEditing: true))
-        data.append(TasksDetailCellObject(title: "Настройки Blender 2", isEditing: true))
-        data.append(TasksDetailCellObject(title: "Базовый мэш 2", isEditing: true))
-        
-        
-        tableHeight?.constant = CGFloat(data.count * 60)
-        view.layoutIfNeeded()
         
         UITextField.appearance().tintColor = .white
         
@@ -65,4 +49,17 @@ class CreateDreamViewController: UIViewController, UITableViewDataSource, UITabl
         
         navigationController?.isNavigationBarHidden = true
     }
+    @IBAction func readyTap(_ sender: Any) {
+        let targetVC = navigationController?.viewControllers.filter{$0 is DreamsExtendedViewController}
+        navigationController?.popToViewController(targetVC![0], animated: true)
+    }
+    
+    @IBAction func addTap(_ sender: Any) {
+        data.append(TasksDetailCellObject(title: "", isEditing: true))
+        table?.reloadData()
+        tableHeight?.constant = CGFloat(data.count * 45)
+        view.updateConstraints()
+        view.layoutSubviews()
+    }
+    
 }

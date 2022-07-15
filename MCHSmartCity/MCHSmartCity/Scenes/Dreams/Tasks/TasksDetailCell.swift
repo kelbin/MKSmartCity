@@ -19,7 +19,10 @@ class TasksDetailCell: UITableViewCell {
         
         selectionStyle = .none
         
+        let placeholderText = NSAttributedString(string: "Новая задача",
+                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         
+        textField?.attributedPlaceholder = placeholderText
         
         // Initialization code
     }

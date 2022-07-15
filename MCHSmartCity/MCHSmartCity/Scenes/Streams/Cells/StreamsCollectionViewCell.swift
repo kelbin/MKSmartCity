@@ -18,7 +18,6 @@ final class StreamsCollectionViewCell: UICollectionViewCell, YTPlayerViewDelegat
         super.awakeFromNib()
         playerView.delegate = self
         playerView.layer.masksToBounds = true
-        playerView.load(withVideoId: "e-rzGkpf3lY", playerVars: ["playsinline": 1])
     }
     
     func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
@@ -34,6 +33,7 @@ extension StreamsCollectionViewCell: Setupable {
     func setup(_ model: Any) {
         guard let object = model as? StreamsViewModel else { return }
         self.isPlayed = object.isPlayed
+        playerView.load(withVideoId: object.videoId, playerVars: ["playsinline": 1])
     }
     
 }

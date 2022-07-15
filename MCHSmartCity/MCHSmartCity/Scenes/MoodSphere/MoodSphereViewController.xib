@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сегодня Наталья  -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYK-HO-PbT">
-                    <rect key="frame" x="131" y="85" width="152.5" height="21"/>
+                    <rect key="frame" x="131" y="64" width="152.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Радостная булочка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-i3-PRF">
-                    <rect key="frame" x="63" y="122" width="288" height="39"/>
+                    <rect key="frame" x="63" y="101" width="288" height="39"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rCI-cK-OEW" secondAttribute="bottom" constant="22" id="Bpa-0f-vba"/>
                 <constraint firstItem="6xi-gv-6At" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C9h-fi-xHf"/>
                 <constraint firstItem="rCI-cK-OEW" firstAttribute="top" secondItem="T06-1W-YjU" secondAttribute="bottom" constant="35" id="E3m-xM-O48"/>
-                <constraint firstItem="JYK-HO-PbT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="41" id="KPL-ws-Bid"/>
+                <constraint firstItem="JYK-HO-PbT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="KPL-ws-Bid"/>
                 <constraint firstItem="Ohb-i3-PRF" firstAttribute="top" secondItem="JYK-HO-PbT" secondAttribute="bottom" constant="16" id="LSb-6G-qjA"/>
                 <constraint firstItem="Ohb-i3-PRF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="df8-dA-aE3"/>
                 <constraint firstItem="JYK-HO-PbT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lnp-hu-AFf"/>

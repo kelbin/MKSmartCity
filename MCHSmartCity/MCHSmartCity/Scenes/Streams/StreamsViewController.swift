@@ -18,22 +18,28 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var carouselStreams: UICollectionView!
     @IBOutlet weak var carouselInspirers: UICollectionView!
     @IBOutlet weak var container: UIView!
+    @IBOutlet weak var carouselCourses: UICollectionView!
     
     let scrollView: UIScrollView = UIScrollView()
     
     var models: [CommonEntity] = []
     
-    var carouselStreamsModel: [CommonEntity] = [StreamsViewModel(videoId: "e-rzGkpf3lY", isPlayed: false),
-                                                StreamsViewModel(videoId: "e-rzGkpf3lY", isPlayed: false),
-                                                StreamsViewModel(videoId: "e-rzGkpf3lY", isPlayed: false)]
+    var carouselStreamsModel: [CommonEntity] = [StreamsViewModel(videoId: "e-rzGkpf3lY", isPlayed: true),
+                                                StreamsViewModel(videoId: "HlpArxeuuIQ", isPlayed: false),
+                                                StreamsViewModel(videoId: "SddiTg0uvrM", isPlayed: false)]
     
-    var carouselInspirerModel: [CommonEntity] = [InspirerViewModel(name: "Test", image: nil),
-                                                 InspirerViewModel(name: "Test", image: nil),
-                                                 InspirerViewModel(name: "Test", image: nil)]
+    var carouselInspirerModel: [CommonEntity] = [InspirerViewModel(name: "Антон Гопка", image: UIImage(named: "img1")),
+                                                 InspirerViewModel(name: "Денис Ефремов", image: UIImage(named: "img2")),
+                                                 InspirerViewModel(name: "Наталья Галкина", image: UIImage(named: "img3"))]
     
     var carouselSIModel: [CommonEntity] = [SIViewModel(name: "test"),
                                            SIViewModel(name: "test"),
                                            SIViewModel(name: "test")]
+    
+    
+    var carouselCoursesModel: [CommonEntity] = [CoursesViewModel(),
+                                                CoursesViewModel(),
+                                                CoursesViewModel()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +51,7 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
         let CSNib = UINib(nibName: "StreamsCollectionViewCell", bundle: nil)
         let CINib = UINib(nibName: "InspirerCollectionViewCell", bundle: nil)
         let SINib = UINib(nibName: "SICollectionViewCell", bundle: nil)
+        let CONib = UINib(nibName: "CoursesCollectionViewCell", bundle: nil)
         
         self.view.addSubview(scrollView)
         scrollView.addSubview(container)
@@ -56,11 +63,12 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
         scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 100)
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 340)
         
         carouselStreams.register(CSNib, forCellWithReuseIdentifier: "StreamsCollectionViewCell")
         carouselInspirers.register(CINib, forCellWithReuseIdentifier: "InspirerCollectionViewCell")
         carouselImages.register(SINib, forCellWithReuseIdentifier: "SICollectionViewCell")
+        carouselCourses.register(CONib, forCellWithReuseIdentifier: "CoursesCollectionViewCell")
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "2")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         
@@ -85,6 +93,8 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
             return carouselStreamsModel.count
         case carouselInspirers:
             return carouselInspirerModel.count
+        case carouselCourses:
+            return carouselCoursesModel.count
         default:
             return 1
         }
@@ -101,6 +111,8 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
             model = carouselInspirerModel
         case carouselImages:
             model = carouselSIModel
+        case carouselCourses:
+            model = carouselCoursesModel
         default:
             break
         }
@@ -123,6 +135,8 @@ final class StreamsViewController: UIViewController, UICollectionViewDelegate, U
             model = carouselInspirerModel
         case carouselImages:
             model = carouselSIModel
+        case carouselCourses:
+            model = carouselCoursesModel
         default:
             break
         }

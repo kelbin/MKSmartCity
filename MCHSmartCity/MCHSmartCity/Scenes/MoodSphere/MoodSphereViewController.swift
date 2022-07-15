@@ -14,6 +14,8 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     
+    var stateArray: [String] = ["Радостная булочка", "Довольная жабка", "Интересующийся картофель"]
+    
     var fancyView: FancyGradientView!
     var isStarted: Bool = true
     var myCustomAnimation: CustomAnimation = CustomAnimation(animID: "myAnimationID")
@@ -53,6 +55,29 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
         blurEffectView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         blurEffectView.heightAnchor.constraint(equalToConstant: 240).isActive = true
         blurEffectView.widthAnchor.constraint(equalToConstant: 240).isActive = true
+        
+        
+        statusLabel.text = ""
+        
+        switch GlobalData.sharedInstance.model.title {
+        case "Радость":
+            stateLabel.text = stateArray[0]
+            statusLabel.text = "Накопленный стресс: -\(Int.random(in: 0..<20))%"
+        case "Благодарность":
+            stateLabel.text = stateArray[1]
+            statusLabel.text = "Накопленный стресс: +\(Int.random(in: 0..<20))%"
+        case "Интерес":
+            stateLabel.text = stateArray[2]
+            statusLabel.text = "Накопленный стресс: -\(Int.random(in: 0..<20))%"
+        default:
+            break
+        }
+        
+        GlobalData.sharedInstance.model.colors.forEach { color in
+            fancyView.colors.insert(color, at: 1)
+        }
+        
+        
     }
     
     private func addNewColorMood(_ colors: UIColor) {
@@ -68,10 +93,6 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
     }
     
     func startAnimation() {
-        
-        GlobalData.sharedInstance.model.colors.forEach { color in
-            fancyView.colors.insert(color, at: 1)
-        }
         
         myCustomAnimation = CustomAnimation(animID: "myAnimationID")
             .then(DirectionAnimation(newDirection: .right, duration: 5))

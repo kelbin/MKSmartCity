@@ -22,8 +22,10 @@ final class InspirerCollectionViewCell: UICollectionViewCell {
 extension InspirerCollectionViewCell: Setupable {
     
     func setup(_ model: Any) {
-//        guard let object = model as? StreamsViewModel else { return }
-//        self.isPlayed = object.isPlayed
+        guard let object = model as? InspirerViewModel else { return }
+        
+        iconImageView.image = object.image
+        nicknameLabel.text = object.name
     }
     
 }
@@ -36,5 +38,5 @@ struct InspirerViewModel: CommonEntity {
     var size: CGSize = CGSize(width: 150, height: 250)
     
     let name: String
-    let image: URL?
+    let image: UIImage?
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C02BA7E288159E0008C4AE0 /* CoursesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C02BA7C288159E0008C4AE0 /* CoursesCollectionViewCell.swift */; };
+		2C02BA7F288159E0008C4AE0 /* CoursesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C02BA7D288159E0008C4AE0 /* CoursesCollectionViewCell.xib */; };
 		2C354AD6287EF4D400A5E598 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C354AD5287EF4D400A5E598 /* Core.swift */; };
 		2C354ADA287EF6D500A5E598 /* StreamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C354AD8287EF6D500A5E598 /* StreamsCollectionViewCell.swift */; };
 		2C354ADB287EF6D500A5E598 /* StreamsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C354AD9287EF6D500A5E598 /* StreamsCollectionViewCell.xib */; };
@@ -82,6 +84,8 @@
 		0B9DBD61A8533D5FCE4B2AEA /* Pods-MCHSmartCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCHSmartCity.debug.xcconfig"; path = "Target Support Files/Pods-MCHSmartCity/Pods-MCHSmartCity.debug.xcconfig"; sourceTree = "<group>"; };
 		0E428091958BF2A261D17BFB /* Pods-MCHSmartCity-MCHSmartCityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCHSmartCity-MCHSmartCityUITests.debug.xcconfig"; path = "Target Support Files/Pods-MCHSmartCity-MCHSmartCityUITests/Pods-MCHSmartCity-MCHSmartCityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1BC56A03708E3C541729F6D8 /* Pods-MCHSmartCityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCHSmartCityTests.release.xcconfig"; path = "Target Support Files/Pods-MCHSmartCityTests/Pods-MCHSmartCityTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C02BA7C288159E0008C4AE0 /* CoursesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C02BA7D288159E0008C4AE0 /* CoursesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C354AD5287EF4D400A5E598 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		2C354AD8287EF6D500A5E598 /* StreamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C354AD9287EF6D500A5E598 /* StreamsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreamsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				2C354ADD287EFEE300A5E598 /* SICollectionViewCell.xib */,
 				2C354AE0287F125800A5E598 /* InspirerCollectionViewCell.swift */,
 				2C354AE1287F125800A5E598 /* InspirerCollectionViewCell.xib */,
+				2C02BA7C288159E0008C4AE0 /* CoursesCollectionViewCell.swift */,
+				2C02BA7D288159E0008C4AE0 /* CoursesCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -524,6 +530,7 @@
 				2CCA0BAE287D84F400DE98BE /* Assets.xcassets in Resources */,
 				2CCA0BDE287ED91600DE98BE /* StreamsViewController.xib in Resources */,
 				3287A2252880B7B60096DDD9 /* Dreams.storyboard in Resources */,
+				2C02BA7F288159E0008C4AE0 /* CoursesCollectionViewCell.xib in Resources */,
 				3287A24F2880DC680096DDD9 /* CreateDream.storyboard in Resources */,
 				3287A2282880B9110096DDD9 /* DreamsCell.xib in Resources */,
 			);
@@ -664,6 +671,7 @@
 				3287A23E2880C2560096DDD9 /* DreamsExtendedCell.swift in Sources */,
 				2C354AE2287F125800A5E598 /* InspirerCollectionViewCell.swift in Sources */,
 				2C354ADA287EF6D500A5E598 /* StreamsCollectionViewCell.swift in Sources */,
+				2C02BA7E288159E0008C4AE0 /* CoursesCollectionViewCell.swift in Sources */,
 				2C354AD6287EF4D400A5E598 /* Core.swift in Sources */,
 				3287A2342880C1680096DDD9 /* CalendarViewCell.swift in Sources */,
 				2C354ADE287EFEE300A5E598 /* SICollectionViewCell.swift in Sources */,

@@ -94,7 +94,7 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogi-6D-2AC">
-                    <rect key="frame" x="175" y="44" width="64" height="4"/>
+                    <rect key="frame" x="175" y="20" width="64" height="4"/>
                     <color key="backgroundColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="4" id="NiU-UU-oKP"/>
@@ -113,10 +113,10 @@
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="4x1-J2-yEn" secondAttribute="bottom" constant="55" id="ZVW-N0-S1I"/>
                 <constraint firstItem="AdE-ci-LIa" firstAttribute="leading" secondItem="4x1-J2-yEn" secondAttribute="trailing" constant="9" id="hxY-47-WxQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lvi-5L-xt7" secondAttribute="trailing" constant="20" id="miS-0U-Pem"/>
+                <constraint firstItem="Ogi-6D-2AC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nqs-OR-QWp"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="AdE-ci-LIa" secondAttribute="bottom" constant="55" id="nxX-rW-Mlp"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="W3x-QT-4CN" secondAttribute="bottom" constant="55" id="oaP-sD-rup"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="xxp-LU-4xC" secondAttribute="bottom" constant="55" id="p8R-AP-c9d"/>
-                <constraint firstItem="Ogi-6D-2AC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="u1L-nr-71P"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uJ6-XR-CPV"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>

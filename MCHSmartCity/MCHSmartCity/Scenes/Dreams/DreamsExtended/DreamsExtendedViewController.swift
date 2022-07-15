@@ -101,10 +101,10 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         
         
         data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Интерфейс программы", subtitle: "Изучить Blender (1/5)"))
-        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Создание макета", subtitle: "Изучить Blender (2/5)"))
-        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Проверка требований", subtitle: "Изучить Blender (3/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "12:00", title: "Создание макета", subtitle: "Изучить Blender (2/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "11:00", title: "Проверка требований", subtitle: "Изучить Blender (3/5)"))
         data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Доработка решения", subtitle: "Изучить Blender (4/5)"))
-        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Презентация", subtitle: "Изучить Blender (5/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "19:00", title: "Презентация", subtitle: "Изучить Blender (5/5)"))
         
         collectionView.delegate = self
         collectionView.dataSource = self

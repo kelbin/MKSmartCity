@@ -10,10 +10,14 @@ import UIKit
 
 class SocialViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-//    var data:
+    var data = [SocialCellObject]()
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        8
+        if collectionView == self.collectionView {
+            return 8
+        }
+        
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -27,14 +31,7 @@ class SocialViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SocialCell.identifier, for: indexPath) as? SocialCell else { return UICollectionViewCell() }
             
-            cell.configureCell(SocialCellObject(icon: .init(imageLiteralResourceName: "socialTabIcon"), iconBackgroundColor: .hexToUIColor("EECCD2"), title: "PinkUnicorn", subTitle: "24 минуты назад", text: """
-Сегодня впервые вышел на пробежку!
-
-Удивился новым ощущениям: повысился пульс и ритм дыхания, выросло давление и скорость кровообращения, пару раз, кольнуло с непривычки.
-
-Понимаю, что организм пытается подстроиться под новый режим работы, но на это нужно время, поэтому собираю волю в кулак.
-""",
-                                                likeCount: 24, commentCount: 24))
+            cell.configureCell(data[indexPath.row])
             
             return cell
         }
@@ -61,6 +58,34 @@ class SocialViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.backgroundColor = .clear
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(SocialHistoryCell.nib(), forCellWithReuseIdentifier: SocialHistoryCell.identifier)
+        
+        
+        data.append(SocialCellObject(icon: .init(imageLiteralResourceName: "socialTabIcon"), iconBackgroundColor: .hexToUIColor("EECCD2"), title: "PinkUnicorn", subTitle: "24 минуты назад", text: """
+Сегодня впервые вышел на пробежку!
+
+Удивился новым ощущениям: повысился пульс и ритм дыхания, выросло давление и скорость кровообращения, пару раз, кольнуло с непривычки.
+
+Понимаю, что организм пытается подстроиться под новый режим работы, но на это нужно время, поэтому собираю волю в кулак.
+""",
+                                                likeCount: 59, commentCount: 20))
+        
+        data.append(SocialCellObject(icon: .init(imageLiteralResourceName: "socialTabIcon-1"), iconBackgroundColor: .hexToUIColor("BFE0FF"), title: "Foxxy", subTitle: "2 часа назад", text: """
+Был очень солнечный день!
+
+Мы с друзьями с удовольствием вышли на пробежку и пробежали вокруг всего нашего красивого города.
+
+Было очень интересно и полезно, мы не переставали удивляться, насколько много есть неизведанных мест вокруг нас. Мы увидели много красивых здания и сооружений.
+""",
+                                                likeCount: 24, commentCount: 14))
+        
+        data.append(SocialCellObject(icon: .init(imageLiteralResourceName: "socialTabIcon"), iconBackgroundColor: .hexToUIColor("EECCD2"), title: "Vanya", subTitle: "1 день назад", text: """
+Сегодня впервые вышел на пробежку!
+
+Удивился новым ощущениям: повысился пульс и ритм дыхания, выросло давление и скорость кровообращения, пару раз, кольнуло с непривычки.
+
+Понимаю, что организм пытается подстроиться под новый режим работы, но на это нужно время, поэтому собираю волю в кулак.
+""",
+                                                likeCount: 10, commentCount: 23))
         
         
         socialCollectionView.delegate = self

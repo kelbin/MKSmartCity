@@ -57,6 +57,8 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden = true
+        
         data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-1"), title: "Мои мечты", subtitle: "9 задач", image: .init(imageLiteralResourceName: "dreams-11")))
         data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-2"), title: "Дневник эмоций", subtitle: "1 запись", image: .init(imageLiteralResourceName: "dreams-21")))
         data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-3"), title: "Дневник благодарностей", subtitle: "1 запись", image: .init(imageLiteralResourceName: "dreams-31")))

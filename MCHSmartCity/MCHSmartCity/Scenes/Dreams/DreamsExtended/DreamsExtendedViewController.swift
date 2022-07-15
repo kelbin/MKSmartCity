@@ -9,8 +9,17 @@ import Foundation
 import UIKit
 
 class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var data = [DreamsExtendedCellObject]()
+    var data2 = [TasksCellObject]()
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        8
+        if collectionView == self.collectionView {
+            return data.count
+        }
+        else {
+            return data2.count
+        }
     }
     
     @IBOutlet var plus: UIImageView!
@@ -22,13 +31,13 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         if collectionView == self.collectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DreamsExtendedCell.identifier, for: indexPath) as? DreamsExtendedCell else { return UICollectionViewCell() }
             
-            cell.configureCell(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Изучить Blender", percent: 30, dreamsCount: 15))
+            cell.configureCell(data[indexPath.row])
             
             return cell
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TasksCell.identifier, for: indexPath) as? TasksCell else { return UICollectionViewCell() }
             
-            cell.configureCell(TasksCellObject(isChecked: true, date: "15:00", title: "Интерфейс программы", subtitle: "Изучить Blender (4/15)"))
+            cell.configureCell(data2[indexPath.row])
             
             return cell
         }
@@ -83,6 +92,20 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         plus.isUserInteractionEnabled = true
 
         
+        
+        data.append(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Изучить Blender", percent: 30, dreamsCount: 15))
+        data.append(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Изучить Дизайн", percent: 30, dreamsCount: 15))
+        data.append(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Научиться водить", percent: 30, dreamsCount: 15))
+        data.append(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Выучить стих", percent: 30, dreamsCount: 15))
+        data.append(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: "Научиться готовить", percent: 30, dreamsCount: 15))
+        
+        
+        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Интерфейс программы", subtitle: "Изучить Blender (1/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Создание макета", subtitle: "Изучить Blender (2/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Проверка требований", subtitle: "Изучить Blender (3/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Доработка решения", subtitle: "Изучить Blender (4/5)"))
+        data2.append(TasksCellObject(isChecked: true, date: "15:00", title: "Презентация", subtitle: "Изучить Blender (5/5)"))
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
@@ -104,8 +127,5 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         taskCollectionView.showsVerticalScrollIndicator = false
         taskCollectionView.register(TasksCell.nib(), forCellWithReuseIdentifier: TasksCell.identifier)
         
-        
-        
-        print("LLLL")
     }
 }

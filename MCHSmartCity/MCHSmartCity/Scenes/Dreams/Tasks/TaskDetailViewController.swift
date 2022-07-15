@@ -40,6 +40,7 @@ class TaskDetailViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
+
     
     
     @IBOutlet var tableView: UITableView!
@@ -48,17 +49,18 @@ class TaskDetailViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data.append(TasksDetailCellObject(title: "Интерфейс программы"))
-        data.append(TasksDetailCellObject(title: "Настройки Blender"))
-        data.append(TasksDetailCellObject(title: "Базовый мэш"))
-        data.append(TasksDetailCellObject(title: "Интерфейс программы 2"))
-        data.append(TasksDetailCellObject(title: "Настройки Blender 2"))
-        data.append(TasksDetailCellObject(title: "Базовый мэш 2"))
+        data.append(TasksDetailCellObject(title: "Интерфейс программы", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Настройки Blender", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Базовый мэш", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Интерфейс программы 2", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Настройки Blender 2", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Базовый мэш 2", isEditing: false))
         
         tableView.dataSource = self
         tableView.delegate = self
         tableView.dragDelegate = self
         tableView.dragInteractionEnabled = true
+        
         
         tableView.backgroundColor = .clear
         tableView.showsVerticalScrollIndicator = false

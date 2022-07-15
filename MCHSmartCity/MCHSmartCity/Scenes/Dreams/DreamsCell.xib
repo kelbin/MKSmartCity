@@ -19,17 +19,46 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hbm-p0-eQ6">
                         <rect key="frame" x="0.0" y="0.0" width="342" height="370"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyC-FC-Exx">
+                        <rect key="frame" x="16" y="337" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXf-5a-JG5">
+                        <rect key="frame" x="16" y="315" width="43" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GRF-Ev-j0H">
+                        <rect key="frame" x="16" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="QSA-8R-SP0"/>
+                            <constraint firstAttribute="width" constant="40" id="bMV-oz-3Cu"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FyC-FC-Exx" secondAttribute="bottom" constant="16" id="3cH-Cz-wAB"/>
+                    <constraint firstItem="HXf-5a-JG5" firstAttribute="leading" secondItem="uO3-a5-8QP" secondAttribute="leading" constant="16" id="8Pi-ja-ewg"/>
+                    <constraint firstItem="FyC-FC-Exx" firstAttribute="leading" secondItem="uO3-a5-8QP" secondAttribute="leading" constant="16" id="92w-hM-JPO"/>
                     <constraint firstAttribute="bottom" secondItem="Hbm-p0-eQ6" secondAttribute="bottom" id="Ggj-x1-lum"/>
                     <constraint firstAttribute="trailing" secondItem="Hbm-p0-eQ6" secondAttribute="trailing" id="IMy-iV-FtB"/>
                     <constraint firstItem="Hbm-p0-eQ6" firstAttribute="leading" secondItem="uO3-a5-8QP" secondAttribute="leading" id="QXt-KZ-4lj"/>
+                    <constraint firstItem="GRF-Ev-j0H" firstAttribute="leading" secondItem="uO3-a5-8QP" secondAttribute="leading" constant="16" id="UAf-57-UYK"/>
+                    <constraint firstItem="HXf-5a-JG5" firstAttribute="leading" secondItem="uO3-a5-8QP" secondAttribute="leading" constant="16" id="UfZ-9p-duH"/>
+                    <constraint firstItem="FyC-FC-Exx" firstAttribute="top" secondItem="HXf-5a-JG5" secondAttribute="bottom" constant="2" id="bMw-iz-2Tu"/>
                     <constraint firstItem="Hbm-p0-eQ6" firstAttribute="top" secondItem="uO3-a5-8QP" secondAttribute="top" id="hS9-ty-gmd"/>
+                    <constraint firstItem="GRF-Ev-j0H" firstAttribute="top" secondItem="uO3-a5-8QP" secondAttribute="top" constant="20" id="yuQ-5X-tlz"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="342" height="370"/>
             <connections>
                 <outlet property="background" destination="Hbm-p0-eQ6" id="H2s-B6-qXM"/>
+                <outlet property="image" destination="GRF-Ev-j0H" id="WGv-do-owz"/>
+                <outlet property="subtitle" destination="FyC-FC-Exx" id="E3C-bJ-LDr"/>
+                <outlet property="title" destination="HXf-5a-JG5" id="d3n-xz-gU0"/>
             </connections>
             <point key="canvasLocation" x="282.60869565217394" y="156.69642857142856"/>
         </collectionViewCell>

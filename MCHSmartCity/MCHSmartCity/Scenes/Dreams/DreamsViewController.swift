@@ -37,6 +37,18 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
             navigationController?.navigationBar.backItem?.title = ""
             navigationController?.navigationItem.backButtonTitle = ""
 //            present(vc, animated: true, completion: nil)
+        } else if indexPath.row == 1 {
+            
+            let vc = MoodSphereViewController(nibName: "MoodSphereViewController", bundle: nil)
+            vc.navigationController?.navigationBar.backItem?.title = ""
+            vc.navigationItem.title = ""
+            vc.navigationItem.backButtonTitle = ""
+            vc.navigationItem.backBarButtonItem?.image = .init(imageLiteralResourceName: "back")
+            navigationController?.pushViewController(vc, animated: true)
+            navigationController?.navigationBar.backItem?.title = ""
+            navigationController?.navigationBar.tintColor = .white
+            navigationController?.navigationItem.backButtonTitle = ""
+            
         }
     }
     
@@ -60,6 +72,18 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(DreamsCell.nib(), forCellWithReuseIdentifier: DreamsCell.identifier)
         
-        
+        presentModal()
+    }
+    
+    private func presentModal() {
+        let vc = MoodSphereDetailViewController(nibName: "MoodSphereDetailViewController", bundle: nil)
+        let nav = UINavigationController(rootViewController: vc)
+
+        nav.modalPresentationStyle = .pageSheet
+
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.large()]
+        }
+        present(nav, animated: true, completion: nil)
     }
 }

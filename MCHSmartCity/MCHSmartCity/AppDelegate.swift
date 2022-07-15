@@ -15,9 +15,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for:UIBarMetrics.default)
+        UIApplication.shared.statusBarStyle = .lightContent
         
         let first = StreamsViewController(nibName: "StreamsViewController", bundle: nil)
-        first.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "folders"), selectedImage: nil)
+        first.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "tab1"), selectedImage: nil)
         first.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
         let nav1 = UINavigationController()
         nav1.viewControllers = [first]
@@ -43,7 +44,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         nav3.title = "third"
         
         let fourth = MoodSphereDetailViewController(nibName: "MoodSphereDetailViewController", bundle: nil)
-        fourth.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Tab"), selectedImage: nil)
+        fourth.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "folders"), selectedImage: nil)
         fourth.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
         let nav4 = UINavigationController()
         nav4.viewControllers = [fourth]
@@ -59,7 +60,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = tabbar
         
-        window?.backgroundColor = .white
+        window?.backgroundColor = .black
         window?.makeKeyAndVisible()
         
         return true

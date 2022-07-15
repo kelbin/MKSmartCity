@@ -93,11 +93,20 @@
                         <action selector="tapToSadButton:" destination="-1" eventType="touchUpInside" id="X12-Hb-tGw"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogi-6D-2AC">
+                    <rect key="frame" x="175" y="44" width="64" height="4"/>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="NiU-UU-oKP"/>
+                        <constraint firstAttribute="width" constant="64" id="Z7B-As-wUH"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="W3x-QT-4CN" firstAttribute="leading" secondItem="xxp-LU-4xC" secondAttribute="trailing" constant="22" id="5iM-Kj-2sR"/>
+                <constraint firstItem="Ogi-6D-2AC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BdR-xW-D61"/>
                 <constraint firstItem="xxp-LU-4xC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FrV-3r-euQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lvi-5L-xt7" secondAttribute="bottom" constant="26" id="LNW-Hu-qe7"/>
                 <constraint firstItem="4x1-J2-yEn" firstAttribute="leading" secondItem="W3x-QT-4CN" secondAttribute="trailing" constant="28.5" id="Xrs-4F-Ylh"/>
@@ -107,6 +116,7 @@
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="AdE-ci-LIa" secondAttribute="bottom" constant="55" id="nxX-rW-Mlp"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="W3x-QT-4CN" secondAttribute="bottom" constant="55" id="oaP-sD-rup"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="xxp-LU-4xC" secondAttribute="bottom" constant="55" id="p8R-AP-c9d"/>
+                <constraint firstItem="Ogi-6D-2AC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="u1L-nr-71P"/>
                 <constraint firstItem="lvi-5L-xt7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uJ6-XR-CPV"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>

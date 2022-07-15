@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+var newTaskTitle: String = ""
+
 class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var data = [DreamsExtendedCellObject]()
@@ -127,5 +129,10 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         taskCollectionView.showsVerticalScrollIndicator = false
         taskCollectionView.register(TasksCell.nib(), forCellWithReuseIdentifier: TasksCell.identifier)
         
+    }
+    
+    func addData(text: String, count: Int) {
+        data.insert(DreamsExtendedCellObject(icon: .init(imageLiteralResourceName: "dreamsCellImage"), name: text, percent: 0, dreamsCount: count), at: 0)
+        collectionView.reloadData()
     }
 }

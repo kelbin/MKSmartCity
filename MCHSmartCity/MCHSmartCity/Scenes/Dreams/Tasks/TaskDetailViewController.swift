@@ -52,9 +52,9 @@ class TaskDetailViewController: UIViewController, UITableViewDataSource, UITable
         data.append(TasksDetailCellObject(title: "Интерфейс программы", isEditing: false))
         data.append(TasksDetailCellObject(title: "Настройки Blender", isEditing: false))
         data.append(TasksDetailCellObject(title: "Базовый мэш", isEditing: false))
-        data.append(TasksDetailCellObject(title: "Интерфейс программы 2", isEditing: false))
-        data.append(TasksDetailCellObject(title: "Настройки Blender 2", isEditing: false))
-        data.append(TasksDetailCellObject(title: "Базовый мэш 2", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Добавление шаблонов", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Подготовка к рендерингу", isEditing: false))
+        data.append(TasksDetailCellObject(title: "Собрать проект", isEditing: false))
         
         tableView.dataSource = self
         tableView.delegate = self

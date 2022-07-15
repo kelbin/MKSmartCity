@@ -43,15 +43,19 @@ class CreateDreamViewController: UIViewController, UITableViewDataSource, UITabl
         UITextField.appearance().tintColor = .white
         
         let placeholderText = NSAttributedString(string: "Я хочу...",
-                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+                                                 attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         
         textField?.attributedPlaceholder = placeholderText
         
         navigationController?.isNavigationBarHidden = true
     }
+    
     @IBAction func readyTap(_ sender: Any) {
-        let targetVC = navigationController?.viewControllers.filter{$0 is DreamsExtendedViewController}
-        navigationController?.popToViewController(targetVC![0], animated: true)
+        let targetVC = navigationController?.viewControllers.filter {$0 is DreamsExtendedViewController}
+        let dreamsVC = targetVC![0] as! DreamsExtendedViewController
+        dreamsVC.addData(text: newTaskTitle, count: data.count)
+        
+        navigationController?.popToViewController(dreamsVC, animated: true)
     }
     
     @IBAction func addTap(_ sender: Any) {
@@ -62,4 +66,7 @@ class CreateDreamViewController: UIViewController, UITableViewDataSource, UITabl
         view.layoutSubviews()
     }
     
+    @IBAction func saveTitle(_ sender: Any) {
+        newTaskTitle = textField?.text ?? ""
+    }
 }

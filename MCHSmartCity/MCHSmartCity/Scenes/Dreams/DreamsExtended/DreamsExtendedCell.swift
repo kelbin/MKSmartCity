@@ -31,7 +31,17 @@ class DreamsExtendedCell: UICollectionViewCell {
         layer.backgroundColor = UIColor.clear.cgColor
         
         title.text = cell.name
-        count.text = String(cell.dreamsCount) + " ЗАДАЧ"
+        
+        var text = " ЗАДАЧ"
+        switch cell.dreamsCount % 10 {
+        case 1:
+            text += "А"
+        case 2, 3, 4:
+            text += "И"
+        default:
+            break
+        }
+        count.text = String(cell.dreamsCount) + text
         percent.text = String(cell.percent) + "%"
         progressView.progress = Float(cell.percent) / 100
 //        titleNewsLabel.text = currentNews.title

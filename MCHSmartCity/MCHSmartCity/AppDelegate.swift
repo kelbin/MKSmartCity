@@ -14,6 +14,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for:UIBarMetrics.default)
+        
         let first = StreamsViewController(nibName: "StreamsViewController", bundle: nil)
         first.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "folders"), selectedImage: nil)
         first.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)

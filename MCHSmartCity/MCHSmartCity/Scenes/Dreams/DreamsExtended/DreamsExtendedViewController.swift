@@ -13,6 +13,8 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
         8
     }
     
+    @IBOutlet var plus: UIImageView!
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //        let currentNewsList = newsList[indexPath.item]
 //        let currentCell = DreamsCell()
@@ -35,7 +37,7 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presentModal2()
+        presentModal()
     }
     
     private func presentModal() {
@@ -61,9 +63,25 @@ class DreamsExtendedViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var taskCollectionView: UICollectionView!
     
+    @objc func tappedMe()
+    {
+        let storyboard = UIStoryboard(name: "CreateDream", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CreateDreamSID")
+        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.isNavigationBarHidden = true
+//        let nav = UINavigationController(rootViewController: vc)
+//        present(nav, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = ""
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedMe))
+        plus.addGestureRecognizer(tap)
+        plus.isUserInteractionEnabled = true
+
         
         collectionView.delegate = self
         collectionView.dataSource = self

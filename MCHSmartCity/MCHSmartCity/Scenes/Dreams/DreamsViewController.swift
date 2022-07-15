@@ -25,10 +25,17 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         if indexPath.row == 0 {
             let storyboard = UIStoryboard(name: "DreamsExtended", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "DreamsExtendedSID")
+            vc.navigationController?.navigationBar.backItem?.title = ""
+            vc.navigationItem.title = ""
+            vc.navigationItem.backButtonTitle = ""
+            vc.navigationItem.backBarButtonItem?.image = .init(imageLiteralResourceName: "back")
             navigationController?.pushViewController(vc, animated: true)
+            navigationController?.navigationBar.backItem?.title = ""
+            navigationController?.navigationItem.backButtonTitle = ""
 //            present(vc, animated: true, completion: nil)
         }
     }
@@ -38,10 +45,10 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-1")))
-        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-2")))
-        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-3")))
-        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-4")))
+        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-1"), title: "Мои мечты", subtitle: "9 задач", image: .init(imageLiteralResourceName: "dreams-11")))
+        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-2"), title: "Дневник эмоций", subtitle: "1 запись", image: .init(imageLiteralResourceName: "dreams-21")))
+        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-3"), title: "Дневник благодарностей", subtitle: "1 запись", image: .init(imageLiteralResourceName: "dreams-31")))
+        data.append(DreamsCellObject(background: .init(imageLiteralResourceName: "dreams-4"), title: "Карта желаний", subtitle: "4 записи", image: .init(imageLiteralResourceName: "dreams-41")))
         
         collectionView.delegate = self
         collectionView.dataSource = self

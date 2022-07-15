@@ -25,6 +25,8 @@
 		2CCA0BDD287ED91600DE98BE /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDB287ED91600DE98BE /* StreamsViewController.swift */; };
 		2CCA0BDE287ED91600DE98BE /* StreamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDC287ED91600DE98BE /* StreamsViewController.xib */; };
 		2CCA0BE0287EDDA400DE98BE /* AnimatedTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0BDF287EDDA400DE98BE /* AnimatedTabbar.swift */; };
+		2CD6DBC42880CFC800EC914A /* MoodSphereDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6DBC22880CFC800EC914A /* MoodSphereDetailViewController.swift */; };
+		2CD6DBC52880CFC800EC914A /* MoodSphereDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6DBC32880CFC800EC914A /* MoodSphereDetailViewController.xib */; };
 		3287A21B2880B2D90096DDD9 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2152880B2D80096DDD9 /* Social.storyboard */; };
 		3287A21C2880B2D90096DDD9 /* SocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2162880B2D80096DDD9 /* SocialCell.xib */; };
 		3287A21D2880B2D90096DDD9 /* SocialHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2172880B2D80096DDD9 /* SocialHistoryCell.xib */; };
@@ -100,6 +102,8 @@
 		2CCA0BDB287ED91600DE98BE /* StreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
 		2CCA0BDC287ED91600DE98BE /* StreamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreamsViewController.xib; sourceTree = "<group>"; };
 		2CCA0BDF287EDDA400DE98BE /* AnimatedTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabbar.swift; sourceTree = "<group>"; };
+		2CD6DBC22880CFC800EC914A /* MoodSphereDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSphereDetailViewController.swift; sourceTree = "<group>"; };
+		2CD6DBC32880CFC800EC914A /* MoodSphereDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodSphereDetailViewController.xib; sourceTree = "<group>"; };
 		3287A2152880B2D80096DDD9 /* Social.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
 		3287A2162880B2D80096DDD9 /* SocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialCell.xib; sourceTree = "<group>"; };
 		3287A2172880B2D80096DDD9 /* SocialHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialHistoryCell.xib; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			children = (
 				2C354AE5288046F100A5E598 /* MoodSphereViewController.swift */,
 				2C354AE6288046F100A5E598 /* MoodSphereViewController.xib */,
+				2CD6DBC22880CFC800EC914A /* MoodSphereDetailViewController.swift */,
+				2CD6DBC32880CFC800EC914A /* MoodSphereDetailViewController.xib */,
 			);
 			path = MoodSphere;
 			sourceTree = "<group>";
@@ -492,6 +498,7 @@
 				3287A23F2880C2560096DDD9 /* DreamsExtended.storyboard in Resources */,
 				2C354AE8288046F100A5E598 /* MoodSphereViewController.xib in Resources */,
 				3287A2482880C2F50096DDD9 /* TaskDetail.storyboard in Resources */,
+				2CD6DBC52880CFC800EC914A /* MoodSphereDetailViewController.xib in Resources */,
 				3287A21B2880B2D90096DDD9 /* Social.storyboard in Resources */,
 				3287A24A2880C2F50096DDD9 /* TasksCell.xib in Resources */,
 				3287A21C2880B2D90096DDD9 /* SocialCell.xib in Resources */,
@@ -633,6 +640,7 @@
 			files = (
 				3287A23D2880C2560096DDD9 /* DreamsExtendedViewController.swift in Sources */,
 				3287A2492880C2F50096DDD9 /* TasksDetailCell.swift in Sources */,
+				2CD6DBC42880CFC800EC914A /* MoodSphereDetailViewController.swift in Sources */,
 				2CCA0BDD287ED91600DE98BE /* StreamsViewController.swift in Sources */,
 				2CCA0BA5287D84EF00DE98BE /* AppDelegate.swift in Sources */,
 				3287A2262880B7B60096DDD9 /* DreamsViewController.swift in Sources */,

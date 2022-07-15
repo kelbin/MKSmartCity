@@ -20,7 +20,7 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fancyView = FancyGradientView(colors: [.blue, .purple],
+        fancyView = FancyGradientView(colors: [.white],
                                       direction: .diagonalTopLeftBottomRight,
                                       type: .axial)
         
@@ -40,7 +40,7 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
         self.view.addSubview(fancyView)
         fancyView.addSubview(blurEffectView)
         
-        fancyView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        fancyView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -40).isActive = true
         fancyView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         fancyView.heightAnchor.constraint(equalToConstant: 240).isActive = true
         fancyView.widthAnchor.constraint(equalToConstant: 240).isActive = true
@@ -49,7 +49,7 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
         
         self.view.bringSubviewToFront(blurEffectView)
         
-        blurEffectView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        blurEffectView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -40).isActive = true
         blurEffectView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         blurEffectView.heightAnchor.constraint(equalToConstant: 240).isActive = true
         blurEffectView.widthAnchor.constraint(equalToConstant: 240).isActive = true
@@ -68,6 +68,11 @@ final class MoodSphereViewController: UIViewController, FancyGradientViewDelegat
     }
     
     func startAnimation() {
+        
+        GlobalData.sharedInstance.model.colors.forEach { color in
+            fancyView.colors.insert(color, at: 1)
+        }
+        
         myCustomAnimation = CustomAnimation(animID: "myAnimationID")
             .then(DirectionAnimation(newDirection: .right, duration: 5))
             .then(ColorAnimation(newColors: [.yellow], duration: 5))

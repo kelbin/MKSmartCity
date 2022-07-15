@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoodSphereDetailViewController" customModule="MCHSmartCity" customModuleProvider="target">
+            <connections>
+                <outlet property="firstButton" destination="4x1-J2-yEn" id="QRK-3O-TBZ"/>
+                <outlet property="secondButton" destination="W3x-QT-4CN" id="eKo-Oi-qBh"/>
+                <outlet property="thirdButton" destination="xxp-LU-4xC" id="m2y-QO-bPA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Что ты чувствуешь?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO8-UI-Wx3">
+                    <rect key="frame" x="58" y="153" width="298.5" height="38.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvi-5L-xt7">
+                    <rect key="frame" x="20" y="780" width="374" height="56"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="KBC-5p-d3F"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tapToContinueButton:" destination="-1" eventType="touchUpInside" id="7mH-I0-xVz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x1-J2-yEn">
+                    <rect key="frame" x="275.5" y="697" width="82" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="PwA-mU-VIM"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Интерес"/>
+                    <connections>
+                        <action selector="tapToInterestButton:" destination="-1" eventType="touchUpInside" id="h3G-yt-Csv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3x-QT-4CN">
+                    <rect key="frame" x="121" y="697" width="126" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="mpW-o2-gJd"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Благодарность"/>
+                    <connections>
+                        <action selector="tapToThanksButton:" destination="-1" eventType="touchUpInside" id="SOj-eq-1KC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxp-LU-4xC">
+                    <rect key="frame" x="20" y="698" width="79" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="IXA-Ip-JYg"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Радость"/>
+                    <connections>
+                        <action selector="tapToHappyButton:" destination="-1" eventType="touchUpInside" id="Cmw-q0-fIm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdE-ci-LIa">
+                    <rect key="frame" x="366.5" y="698" width="73" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="Sju-MI-Qr4"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Печаль"/>
+                    <connections>
+                        <action selector="tapToSadButton:" destination="-1" eventType="touchUpInside" id="X12-Hb-tGw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="W3x-QT-4CN" firstAttribute="leading" secondItem="xxp-LU-4xC" secondAttribute="trailing" constant="22" id="5iM-Kj-2sR"/>
+                <constraint firstItem="xxp-LU-4xC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FrV-3r-euQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lvi-5L-xt7" secondAttribute="bottom" constant="26" id="LNW-Hu-qe7"/>
+                <constraint firstItem="4x1-J2-yEn" firstAttribute="leading" secondItem="W3x-QT-4CN" secondAttribute="trailing" constant="28.5" id="Xrs-4F-Ylh"/>
+                <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="4x1-J2-yEn" secondAttribute="bottom" constant="55" id="ZVW-N0-S1I"/>
+                <constraint firstItem="AdE-ci-LIa" firstAttribute="leading" secondItem="4x1-J2-yEn" secondAttribute="trailing" constant="9" id="hxY-47-WxQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lvi-5L-xt7" secondAttribute="trailing" constant="20" id="miS-0U-Pem"/>
+                <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="AdE-ci-LIa" secondAttribute="bottom" constant="55" id="nxX-rW-Mlp"/>
+                <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="W3x-QT-4CN" secondAttribute="bottom" constant="55" id="oaP-sD-rup"/>
+                <constraint firstItem="lvi-5L-xt7" firstAttribute="top" secondItem="xxp-LU-4xC" secondAttribute="bottom" constant="55" id="p8R-AP-c9d"/>
+                <constraint firstItem="lvi-5L-xt7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uJ6-XR-CPV"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+</document>

@@ -40,7 +40,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         nav3.setNavigationBarHidden(false, animated: true)
         nav3.title = "third"
         
-        let fourth = MoodSphereViewController(nibName: "MoodSphereViewController", bundle: nil)
+        let fourth = MoodSphereDetailViewController(nibName: "MoodSphereDetailViewController", bundle: nil)
         fourth.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Tab"), selectedImage: nil)
         fourth.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
         let nav4 = UINavigationController()

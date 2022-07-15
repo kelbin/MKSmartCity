@@ -52,5 +52,7 @@ class DreamsViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.backgroundColor = .clear
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(DreamsCell.nib(), forCellWithReuseIdentifier: DreamsCell.identifier)
+        
+        
     }
 }
